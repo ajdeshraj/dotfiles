@@ -13,6 +13,9 @@ plugins=(git
 	zsh-autosuggestions
 	zsh-syntax-highlighting)
 
+# Aliases
+alias tls="tmux ls"
+
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

@@ -15,6 +15,7 @@ plugins=(git
 
 # Aliases
 alias tls="tmux ls"
+alias glg="git log --graph --decorate --stat"
 alias glog="git log --graph --decorate --all"
 
 source $ZSH/oh-my-zsh.sh

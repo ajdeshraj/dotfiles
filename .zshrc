@@ -9,14 +9,19 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# zsh plugins
 plugins=(git
 	zsh-autosuggestions
 	zsh-syntax-highlighting)
+# Syntax highlighting needs to be the last plugin sourced
 
 # Aliases
 alias tls="tmux ls"
 alias glg="git log --graph --decorate --stat"
 alias glog="git log --graph --decorate --all"
+
+# Changing Default Text Editor
+export EDITOR=/home/arjun/bin/nvim
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,3 +30,6 @@ source $ZSH/oh-my-zsh.sh
 
 # fzf configuration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fixes bug on starting terminal
+unset ZSH_AUTOSUGGEST_USE_ASYNC

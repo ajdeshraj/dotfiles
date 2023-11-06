@@ -16,6 +16,7 @@ plugins=(git
 # Syntax highlighting needs to be the last plugin sourced
 
 # Aliases
+alias tmux="tmux -u"
 alias tls="tmux ls"
 alias glg="git log --graph --decorate --stat"
 alias glog="git log --graph --decorate --all"

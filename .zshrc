@@ -22,7 +22,7 @@ alias glg="git log --graph --decorate --stat"
 alias glog="git log --graph --decorate --all"
 
 # Changing Default Text Editor
-export EDITOR=/home/arjun/bin/nvim
+export EDITOR=/home/arjun/usr/local/bin/nvim
 
 source $ZSH/oh-my-zsh.sh
 

@@ -15,14 +15,8 @@ plugins=(git
 	zsh-syntax-highlighting)
 # Syntax highlighting needs to be the last plugin sourced
 
-# Aliases
-alias tmux="tmux -u"
-alias tls="tmux ls"
-alias glg="git log --graph --decorate --stat"
-alias glog="git log --graph --decorate --all"
-
 # Changing Default Text Editor
-export EDITOR=/home/arjun/usr/local/bin/nvim
+export EDITOR=/usr/local/bin/nvim
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,3 +28,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Fixes bug on starting terminal
 unset ZSH_AUTOSUGGEST_USE_ASYNC
+
+# Aliases
+alias tmux="tmux -u"
+alias tls="tmux ls"
+alias glg="git log --graph --decorate --stat"
+alias glog="git log --graph --decorate"
